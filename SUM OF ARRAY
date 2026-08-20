@@ -1,0 +1,12 @@
+class Solution {
+    int sum(int arr[]) {
+        int total = 0;
+        
+        // Loop through the array and accumulate the sum
+        for (int num : arr) {
+            total += num;
+        }
+        
+        return total;
+    }
+}
