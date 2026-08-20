@@ -1,0 +1,12 @@
+class Solution {
+    public static int mean(int[] arr) {
+        long sum = 0; // Use long to prevent integer overflow
+        
+        for (int num : arr) {
+            sum += num;
+        }
+        
+        // Integer division automatically computes the floor value for positive sums
+        return (int) (sum / arr.length);
+    }
+}
