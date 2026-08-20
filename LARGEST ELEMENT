@@ -1,0 +1,17 @@
+public class FindLargest {
+    public static void main(String[] args) {
+        int[] numbers = {12, 45, 67, 23, 89, 34};
+
+        // Assume the first element is the largest initially
+        int max = numbers[0];
+
+        // Loop through the array from the second element
+        for (int i = 1; i < numbers.length; i++) {
+            if (numbers[i] > max) {
+                max = numbers[i]; // Update max if a larger element is found
+            }
+        }
+
+        System.out.println("The largest element is: " + max);
+    }
+}
